@@ -1,0 +1,944 @@
+<?xml version="1.0" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:robot="http://example.org/robot#">
+  <owl:Ontology rdf:about="http://example.org/robot"/>
+  <owl:ObjectProperty rdf:about="http://example.org/robot#hasPart">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://example.org/robot#hasParentLink"/>
+  <owl:ObjectProperty rdf:about="http://example.org/robot#hasChildLink"/>
+  <owl:Class rdf:about="http://example.org/robot#Revolute"/>
+  <owl:Class rdf:about="http://example.org/robot#Continuous"/>
+  <owl:Class rdf:about="http://example.org/robot#Prismatic"/>
+  <owl:Class rdf:about="http://example.org/robot#Fixed"/>
+  <owl:Class rdf:about="http://example.org/robot#Floating"/>
+  <owl:Class rdf:about="http://example.org/robot#Planar"/>
+  <robot:Link rdf:about="http://example.org/robot#apartment_root"/>
+  <robot:Link rdf:about="http://example.org/robot#furnitures_root"/>
+  <robot:Link rdf:about="http://example.org/robot#walls"/>
+  <robot:Link rdf:about="http://example.org/robot#windows"/>
+  <robot:Link rdf:about="http://example.org/robot#wall_coloksu_wall1"/>
+  <robot:Link rdf:about="http://example.org/robot#wall_coloksu_wall2"/>
+  <robot:Link rdf:about="http://example.org/robot#wall_coloksu_wall3"/>
+  <robot:Link rdf:about="http://example.org/robot#wall_coloksu_wall4"/>
+  <robot:Link rdf:about="http://example.org/robot#wardrobe"/>
+  <robot:Link rdf:about="http://example.org/robot#wardrobe_door_left"/>
+  <robot:Link rdf:about="http://example.org/robot#wardrobe_door_left_handle"/>
+  <robot:Link rdf:about="http://example.org/robot#wardrobe_door_right"/>
+  <robot:Link rdf:about="http://example.org/robot#wardrobe_door_right_handle"/>
+  <robot:Link rdf:about="http://example.org/robot#armchair"/>
+  <robot:Link rdf:about="http://example.org/robot#sofa"/>
+  <robot:Link rdf:about="http://example.org/robot#coffee_table"/>
+  <robot:Link rdf:about="http://example.org/robot#coffee_table_drawer"/>
+  <robot:Link rdf:about="http://example.org/robot#bedside_table"/>
+  <robot:Link rdf:about="http://example.org/robot#kitchen_root"/>
+  <robot:Link rdf:about="http://example.org/robot#side_A"/>
+  <robot:Link rdf:about="http://example.org/robot#side_B"/>
+  <robot:Link rdf:about="http://example.org/robot#cabinet1"/>
+  <robot:Link rdf:about="http://example.org/robot#cabinet1_door_top_left"/>
+  <robot:Link rdf:about="http://example.org/robot#handle_cab1_top_door"/>
+  <robot:Link rdf:about="http://example.org/robot#oven"/>
+  <robot:Link rdf:about="http://example.org/robot#cabinet1_drawer_middle"/>
+  <robot:Link rdf:about="http://example.org/robot#handle_cab1_drawer_mid"/>
+  <robot:Link rdf:about="http://example.org/robot#cabinet1_drawer_bottom"/>
+  <robot:Link rdf:about="http://example.org/robot#handle_cab1_drawer_bottom"/>
+  <robot:Link rdf:about="http://example.org/robot#cabinet1_coloksu_level4"/>
+  <robot:Link rdf:about="http://example.org/robot#cabinet1_coloksu_level5"/>
+  <robot:Link rdf:about="http://example.org/robot#cabinet2"/>
+  <robot:Link rdf:about="http://example.org/robot#cabinet2_door_out_fancy"/>
+  <robot:Link rdf:about="http://example.org/robot#cabinet2_door_left"/>
+  <robot:Link rdf:about="http://example.org/robot#handle_cab2_door"/>
+  <robot:Link rdf:about="http://example.org/robot#cabinet2_drawer_small"/>
+  <robot:Link rdf:about="http://example.org/robot#cabinet2_drawer_big"/>
+  <robot:Link rdf:about="http://example.org/robot#cabinet3"/>
+  <robot:Link rdf:about="http://example.org/robot#cabinet3_door_top_out_fancy"/>
+  <robot:Link rdf:about="http://example.org/robot#cabinet3_door_top_left"/>
+  <robot:Link rdf:about="http://example.org/robot#handle_cab3_door_top"/>
+  <robot:Link rdf:about="http://example.org/robot#cabinet3_door_bottom_out_fancy"/>
+  <robot:Link rdf:about="http://example.org/robot#cabinet3_door_bottom_left"/>
+  <robot:Link rdf:about="http://example.org/robot#handle_cab3_door_bottom"/>
+  <robot:Link rdf:about="http://example.org/robot#cabinet4"/>
+  <robot:Link rdf:about="http://example.org/robot#cabinet4_door_top"/>
+  <robot:Link rdf:about="http://example.org/robot#cabinet4_door_bottom"/>
+  <robot:Link rdf:about="http://example.org/robot#handle_cab4_door_bottom"/>
+  <robot:Link rdf:about="http://example.org/robot#cabinet5"/>
+  <robot:Link rdf:about="http://example.org/robot#cabinet5_drawer_top"/>
+  <robot:Link rdf:about="http://example.org/robot#handle_cab5_t"/>
+  <robot:Link rdf:about="http://example.org/robot#cabinet5_drawer_middle"/>
+  <robot:Link rdf:about="http://example.org/robot#handle_cab5_m"/>
+  <robot:Link rdf:about="http://example.org/robot#cabinet5_drawer_bottom"/>
+  <robot:Link rdf:about="http://example.org/robot#handle_cab5_b"/>
+  <robot:Link rdf:about="http://example.org/robot#cabinet6"/>
+  <robot:Link rdf:about="http://example.org/robot#cabinet6_drawer_top"/>
+  <robot:Link rdf:about="http://example.org/robot#handle_cab6_t"/>
+  <robot:Link rdf:about="http://example.org/robot#cabinet6_drawer_middle"/>
+  <robot:Link rdf:about="http://example.org/robot#handle_cab6_m"/>
+  <robot:Link rdf:about="http://example.org/robot#cabinet6_drawer_bottom"/>
+  <robot:Link rdf:about="http://example.org/robot#handle_cab6_b"/>
+  <robot:Link rdf:about="http://example.org/robot#cabinet12"/>
+  <robot:Link rdf:about="http://example.org/robot#cabinet12_door_top_out_fancy"/>
+  <robot:Link rdf:about="http://example.org/robot#cabinet12_door_top_left"/>
+  <robot:Link rdf:about="http://example.org/robot#cabinet12_door_bottom_out_fancy"/>
+  <robot:Link rdf:about="http://example.org/robot#cabinet12_door_bottom_left"/>
+  <robot:Link rdf:about="http://example.org/robot#cabinet7"/>
+  <robot:Link rdf:about="http://example.org/robot#cabinet7_door_bottom_left"/>
+  <robot:Link rdf:about="http://example.org/robot#handle_cab7"/>
+  <robot:Link rdf:about="http://example.org/robot#dishwasher_drawer_middle"/>
+  <robot:Link rdf:about="http://example.org/robot#handle_cab7_middle"/>
+  <robot:Link rdf:about="http://example.org/robot#cabinet8"/>
+  <robot:Link rdf:about="http://example.org/robot#cabinet8_drawer_middle"/>
+  <robot:Link rdf:about="http://example.org/robot#cabinet8_drawer_bottom"/>
+  <robot:Link rdf:about="http://example.org/robot#handle_cab8"/>
+  <robot:Link rdf:about="http://example.org/robot#cabinet9"/>
+  <robot:Link rdf:about="http://example.org/robot#cabinet9_drawer_top"/>
+  <robot:Link rdf:about="http://example.org/robot#handle_cab9_t"/>
+  <robot:Link rdf:about="http://example.org/robot#cabinet9_drawer_middle"/>
+  <robot:Link rdf:about="http://example.org/robot#handle_cab9_m"/>
+  <robot:Link rdf:about="http://example.org/robot#cabinet9_drawer_bottom"/>
+  <robot:Link rdf:about="http://example.org/robot#handle_cab9_b"/>
+  <robot:Link rdf:about="http://example.org/robot#cabinet10"/>
+  <robot:Link rdf:about="http://example.org/robot#cabinet10_drawer_top"/>
+  <robot:Link rdf:about="http://example.org/robot#handle_cab10_t"/>
+  <robot:Link rdf:about="http://example.org/robot#cabinet10_drawer_middle"/>
+  <robot:Link rdf:about="http://example.org/robot#handle_cab10_m"/>
+  <robot:Link rdf:about="http://example.org/robot#cabinet10_drawer_bottom"/>
+  <robot:Link rdf:about="http://example.org/robot#handle_cab10_b"/>
+  <robot:Link rdf:about="http://example.org/robot#cabinet11"/>
+  <robot:Link rdf:about="http://example.org/robot#cabinet11_drawer_top"/>
+  <robot:Link rdf:about="http://example.org/robot#handle_cab11_t"/>
+  <robot:Link rdf:about="http://example.org/robot#cabinet11_drawer_middle"/>
+  <robot:Link rdf:about="http://example.org/robot#handle_cab11_m"/>
+  <robot:Link rdf:about="http://example.org/robot#cabinet11_drawer_bottom"/>
+  <robot:Link rdf:about="http://example.org/robot#handle_cab11_b"/>
+  <robot:Link rdf:about="http://example.org/robot#island_countertop"/>
+  <robot:Link rdf:about="http://example.org/robot#cooktop"/>
+  <robot:Link rdf:about="http://example.org/robot#hotplate1"/>
+  <robot:Link rdf:about="http://example.org/robot#hotplate2"/>
+  <robot:Link rdf:about="http://example.org/robot#hotplate3"/>
+  <robot:Link rdf:about="http://example.org/robot#hotplate4"/>
+  <robot:Link rdf:about="http://example.org/robot#sink"/>
+  <robot:Link rdf:about="http://example.org/robot#tap_body"/>
+  <robot:Link rdf:about="http://example.org/robot#tap_handle_open"/>
+  <robot:Link rdf:about="http://example.org/robot#tap_handle"/>
+  <robot:Link rdf:about="http://example.org/robot#useless_underbar_a"/>
+  <robot:Link rdf:about="http://example.org/robot#useless_underbar_b"/>
+  <robot:Link rdf:about="http://example.org/robot#countertop"/>
+  <robot:Link rdf:about="http://example.org/robot#coffe_machine"/>
+  <robot:Link rdf:about="http://example.org/robot#island_waterfall_left"/>
+  <robot:Link rdf:about="http://example.org/robot#island_waterfall_right"/>
+  <robot:Link rdf:about="http://example.org/robot#island_back"/>
+  <robot:Link rdf:about="http://example.org/robot#side_A_left"/>
+  <robot:Link rdf:about="http://example.org/robot#side_A_rt"/>
+  <robot:Link rdf:about="http://example.org/robot#side_A_rb"/>
+  <robot:Joint rdf:about="http://example.org/robot#furnitures_base">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#apartment_root"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#furnitures_root"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#walls_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#furnitures_root"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#walls"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#windows_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#furnitures_root"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#windows"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#wall_coloksu_wall1_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#furnitures_root"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#wall_coloksu_wall1"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#wall_coloksu_wall2_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#furnitures_root"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#wall_coloksu_wall2"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#wall_coloksu_wall3_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#furnitures_root"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#wall_coloksu_wall3"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#wall_coloksu_wall4_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#furnitures_root"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#wall_coloksu_wall4"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#wardrobe_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#furnitures_root"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#wardrobe"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#wardrobe_door_left_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#wardrobe"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#wardrobe_door_left"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#wardrobe_door_left_handle_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#wardrobe_door_left"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#wardrobe_door_left_handle"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#wardrobe_door_right_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#wardrobe"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#wardrobe_door_right"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#wardrobe_door_right_handle_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#wardrobe_door_right"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#wardrobe_door_right_handle"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#armchair_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#furnitures_root"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#armchair"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#sofa_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#furnitures_root"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#sofa"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#coffee_table_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#furnitures_root"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#coffee_table"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#coffee_table_drawer_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#coffee_table"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#coffee_table_drawer"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#bedside_table_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#furnitures_root"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#bedside_table"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#kitchen_base">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#apartment_root"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#kitchen_root"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#frame_A_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#kitchen_root"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#side_A"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#frame_B_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#kitchen_root"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#side_B"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#cabinet1_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#side_A"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#cabinet1"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#cabinet1_door_top_left_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cabinet1"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#cabinet1_door_top_left"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#handle_cab1_top_door_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cabinet1_door_top_left"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#handle_cab1_top_door"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#oven_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cabinet1"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#oven"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#cabinet1_drawer_middle_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cabinet1"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#cabinet1_drawer_middle"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#handle_cab1_drawer_mid_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cabinet1_drawer_middle"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#handle_cab1_drawer_mid"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#cabinet1_drawer_bottom_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cabinet1"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#cabinet1_drawer_bottom"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#handle_cab1_drawer_bottom_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cabinet1_drawer_bottom"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#handle_cab1_drawer_bottom"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#cabinet1_coloksu_level4_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cabinet1"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#cabinet1_coloksu_level4"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#cabinet1_coloksu_level5_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cabinet1"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#cabinet1_coloksu_level5"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#cabinet2_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#side_A"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#cabinet2"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#cabinet2_door_out_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cabinet2"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#cabinet2_door_out_fancy"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#cabinet2_door_left_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cabinet2_door_out_fancy"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#cabinet2_door_left"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#handle_cab2_drawer_bottom_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cabinet2_door_left"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#handle_cab2_door"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#cabinet2_drawer_small_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cabinet2"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#cabinet2_drawer_small"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#cabinet2_drawer_big_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cabinet2"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#cabinet2_drawer_big"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#cabinet3_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#side_A"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#cabinet3"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#cabinet3_door_top_out_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cabinet3"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#cabinet3_door_top_out_fancy"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#cabinet3_door_top_left_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cabinet3_door_top_out_fancy"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#cabinet3_door_top_left"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#handle_cab3_door_top_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cabinet3_door_top_left"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#handle_cab3_door_top"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#cabinet3_door_bottom_out_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cabinet3"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#cabinet3_door_bottom_out_fancy"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#cabinet3_door_bottom_left_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cabinet3_door_bottom_out_fancy"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#cabinet3_door_bottom_left"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#handle_cab3_door_bottom_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cabinet3_door_bottom_left"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#handle_cab3_door_bottom"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#cabinet4_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#side_A"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#cabinet4"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#cabinet4_door_top_top_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cabinet4"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#cabinet4_door_top"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#cabinet4_door_bottom_bottom_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cabinet4_door_top"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#cabinet4_door_bottom"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#handle_cab4_door_bottom_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cabinet4_door_bottom"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#handle_cab4_door_bottom"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#cabinet5_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#side_A"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#cabinet5"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#cabinet5_drawer_top_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cabinet5"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#cabinet5_drawer_top"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#handle_cab5_top_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cabinet5_drawer_top"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#handle_cab5_t"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#cabinet5_drawer_middle_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cabinet5"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#cabinet5_drawer_middle"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#handle_cab5_mid_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cabinet5_drawer_middle"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#handle_cab5_m"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#cabinet5_drawer_bottom_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cabinet5"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#cabinet5_drawer_bottom"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#handle_cab5_bott_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cabinet5_drawer_bottom"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#handle_cab5_b"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#cabinet6_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#side_A"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#cabinet6"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#cabinet6_drawer_top_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cabinet6"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#cabinet6_drawer_top"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#handle_cab6_top_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cabinet6_drawer_top"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#handle_cab6_t"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#cabinet6_drawer_middle_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cabinet6"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#cabinet6_drawer_middle"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#handle_cab6_mid_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cabinet6_drawer_middle"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#handle_cab6_m"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#cabinet6_drawer_bottom_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cabinet6"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#cabinet6_drawer_bottom"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#handle_cab6_bott_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cabinet6_drawer_bottom"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#handle_cab6_b"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#cabinet12_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#side_A"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#cabinet12"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#cabinet12_door_top_out_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cabinet12"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#cabinet12_door_top_out_fancy"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#cabinet12_door_top_left_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cabinet12_door_top_out_fancy"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#cabinet12_door_top_left"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#cabinet12_door_bottom_out_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cabinet12"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#cabinet12_door_bottom_out_fancy"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#cabinet12_door_bottom_left_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cabinet12_door_bottom_out_fancy"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#cabinet12_door_bottom_left"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#cabinet7_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#side_B"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#cabinet7"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#cabinet7_door_bottom_left_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cabinet7"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#cabinet7_door_bottom_left"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#handle_cab7_top_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cabinet7_door_bottom_left"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#handle_cab7"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#dishwasher_drawer_middle_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cabinet7"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#dishwasher_drawer_middle"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#handle_cab7_drawer_middle_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#dishwasher_drawer_middle"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#handle_cab7_middle"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#cabinet8_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#side_B"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#cabinet8"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#cabinet8_drawer_middle_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cabinet8"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#cabinet8_drawer_middle"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#cabinet8_drawer_bottom_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cabinet8"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#cabinet8_drawer_bottom"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#handle_cab8_top_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cabinet8_drawer_bottom"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#handle_cab8"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#cabinet9_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#side_B"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#cabinet9"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#cabinet9_drawer_top_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cabinet9"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#cabinet9_drawer_top"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#handle_cab9_top_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cabinet9_drawer_top"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#handle_cab9_t"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#cabinet9_drawer_middle_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cabinet9"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#cabinet9_drawer_middle"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#handle_cab9_mid_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cabinet9_drawer_middle"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#handle_cab9_m"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#cabinet9_drawer_bottom_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cabinet9"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#cabinet9_drawer_bottom"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#handle_cab9_bott_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cabinet9_drawer_bottom"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#handle_cab9_b"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#cabinet10_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#side_B"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#cabinet10"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#cabinet10_drawer_top_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cabinet10"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#cabinet10_drawer_top"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#handle_cab10_top_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cabinet10_drawer_top"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#handle_cab10_t"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#cabinet10_drawer_middle_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cabinet10"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#cabinet10_drawer_middle"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#handle_cab10_mid_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cabinet10_drawer_middle"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#handle_cab10_m"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#cabinet10_drawer_bottom_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cabinet10"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#cabinet10_drawer_bottom"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#handle_cab10_bott_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cabinet10_drawer_bottom"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#handle_cab10_b"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#cabinet11_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#side_B"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#cabinet11"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#cabinet11_drawer_top_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cabinet11"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#cabinet11_drawer_top"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#handle_cab11_top_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cabinet11_drawer_top"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#handle_cab11_t"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#cabinet11_drawer_middle_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cabinet11"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#cabinet11_drawer_middle"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#handle_cab11_mid_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cabinet11_drawer_middle"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#handle_cab11_m"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#cabinet11_drawer_bottom_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cabinet11"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#cabinet11_drawer_bottom"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#handle_cab11_bott_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cabinet11_drawer_bottom"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#handle_cab11_b"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#island_countertop_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#side_B"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#island_countertop"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#cooktop_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#island_countertop"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#cooktop"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#hotplate1_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cooktop"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#hotplate1"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#hotplate2_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cooktop"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#hotplate2"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#hotplate3_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cooktop"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#hotplate3"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#hotplate4_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cooktop"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#hotplate4"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#sink_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#island_countertop"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#sink"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#tap_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#sink"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#tap_body"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#tap_handle_open_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#tap_body"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#tap_handle_open"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#tap_handle_hot_cold_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#tap_handle_open"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#tap_handle"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#socket_a_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#side_A"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#useless_underbar_a"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#socket_b_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#side_B"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#useless_underbar_b"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#countertop_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#cabinet5"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#countertop"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#coffe_machine_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#countertop"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#coffe_machine"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#island_waterfall_left_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#side_B"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#island_waterfall_left"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#island_waterfall_right_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#side_B"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#island_waterfall_right"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#island_back_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#side_B"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#island_back"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#side_A_left_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#side_A"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#side_A_left"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#side_A_right_top_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#side_A"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#side_A_rt"/>
+  </robot:Joint>
+  <robot:Joint rdf:about="http://example.org/robot#side_A_right_bott_joint">
+    <robot:hasParentLink rdf:resource="http://example.org/robot#side_A"/>
+    <robot:hasChildLink rdf:resource="http://example.org/robot#side_A_rb"/>
+  </robot:Joint>
+  <rdf:Description rdf:about="http://example.org/robot#apartment_root">
+    <robot:hasPart rdf:resource="http://example.org/robot#furnitures_root"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#apartment_root">
+    <robot:hasPart rdf:resource="http://example.org/robot#kitchen_root"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#furnitures_root">
+    <robot:hasPart rdf:resource="http://example.org/robot#walls"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#furnitures_root">
+    <robot:hasPart rdf:resource="http://example.org/robot#windows"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#furnitures_root">
+    <robot:hasPart rdf:resource="http://example.org/robot#wall_coloksu_wall1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#furnitures_root">
+    <robot:hasPart rdf:resource="http://example.org/robot#wall_coloksu_wall2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#furnitures_root">
+    <robot:hasPart rdf:resource="http://example.org/robot#wall_coloksu_wall3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#furnitures_root">
+    <robot:hasPart rdf:resource="http://example.org/robot#wall_coloksu_wall4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#furnitures_root">
+    <robot:hasPart rdf:resource="http://example.org/robot#wardrobe"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#furnitures_root">
+    <robot:hasPart rdf:resource="http://example.org/robot#armchair"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#furnitures_root">
+    <robot:hasPart rdf:resource="http://example.org/robot#sofa"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#furnitures_root">
+    <robot:hasPart rdf:resource="http://example.org/robot#coffee_table"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#furnitures_root">
+    <robot:hasPart rdf:resource="http://example.org/robot#bedside_table"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#wardrobe">
+    <robot:hasPart rdf:resource="http://example.org/robot#wardrobe_door_left"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#wardrobe">
+    <robot:hasPart rdf:resource="http://example.org/robot#wardrobe_door_right"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#wardrobe_door_left">
+    <robot:hasPart rdf:resource="http://example.org/robot#wardrobe_door_left_handle"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#wardrobe_door_right">
+    <robot:hasPart rdf:resource="http://example.org/robot#wardrobe_door_right_handle"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#coffee_table">
+    <robot:hasPart rdf:resource="http://example.org/robot#coffee_table_drawer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#kitchen_root">
+    <robot:hasPart rdf:resource="http://example.org/robot#side_A"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#kitchen_root">
+    <robot:hasPart rdf:resource="http://example.org/robot#side_B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#side_A">
+    <robot:hasPart rdf:resource="http://example.org/robot#cabinet1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#side_A">
+    <robot:hasPart rdf:resource="http://example.org/robot#cabinet2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#side_A">
+    <robot:hasPart rdf:resource="http://example.org/robot#cabinet3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#side_A">
+    <robot:hasPart rdf:resource="http://example.org/robot#cabinet4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#side_A">
+    <robot:hasPart rdf:resource="http://example.org/robot#cabinet5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#side_A">
+    <robot:hasPart rdf:resource="http://example.org/robot#cabinet6"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#side_A">
+    <robot:hasPart rdf:resource="http://example.org/robot#cabinet12"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#side_A">
+    <robot:hasPart rdf:resource="http://example.org/robot#useless_underbar_a"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#side_A">
+    <robot:hasPart rdf:resource="http://example.org/robot#side_A_left"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#side_A">
+    <robot:hasPart rdf:resource="http://example.org/robot#side_A_rt"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#side_A">
+    <robot:hasPart rdf:resource="http://example.org/robot#side_A_rb"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cabinet1">
+    <robot:hasPart rdf:resource="http://example.org/robot#cabinet1_door_top_left"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cabinet1">
+    <robot:hasPart rdf:resource="http://example.org/robot#oven"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cabinet1">
+    <robot:hasPart rdf:resource="http://example.org/robot#cabinet1_drawer_middle"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cabinet1">
+    <robot:hasPart rdf:resource="http://example.org/robot#cabinet1_drawer_bottom"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cabinet1">
+    <robot:hasPart rdf:resource="http://example.org/robot#cabinet1_coloksu_level4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cabinet1">
+    <robot:hasPart rdf:resource="http://example.org/robot#cabinet1_coloksu_level5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cabinet1_door_top_left">
+    <robot:hasPart rdf:resource="http://example.org/robot#handle_cab1_top_door"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cabinet1_drawer_middle">
+    <robot:hasPart rdf:resource="http://example.org/robot#handle_cab1_drawer_mid"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cabinet1_drawer_bottom">
+    <robot:hasPart rdf:resource="http://example.org/robot#handle_cab1_drawer_bottom"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cabinet2">
+    <robot:hasPart rdf:resource="http://example.org/robot#cabinet2_door_out_fancy"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cabinet2">
+    <robot:hasPart rdf:resource="http://example.org/robot#cabinet2_drawer_small"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cabinet2">
+    <robot:hasPart rdf:resource="http://example.org/robot#cabinet2_drawer_big"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cabinet2_door_out_fancy">
+    <robot:hasPart rdf:resource="http://example.org/robot#cabinet2_door_left"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cabinet2_door_left">
+    <robot:hasPart rdf:resource="http://example.org/robot#handle_cab2_door"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cabinet3">
+    <robot:hasPart rdf:resource="http://example.org/robot#cabinet3_door_top_out_fancy"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cabinet3">
+    <robot:hasPart rdf:resource="http://example.org/robot#cabinet3_door_bottom_out_fancy"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cabinet3_door_top_out_fancy">
+    <robot:hasPart rdf:resource="http://example.org/robot#cabinet3_door_top_left"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cabinet3_door_top_left">
+    <robot:hasPart rdf:resource="http://example.org/robot#handle_cab3_door_top"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cabinet3_door_bottom_out_fancy">
+    <robot:hasPart rdf:resource="http://example.org/robot#cabinet3_door_bottom_left"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cabinet3_door_bottom_left">
+    <robot:hasPart rdf:resource="http://example.org/robot#handle_cab3_door_bottom"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cabinet4">
+    <robot:hasPart rdf:resource="http://example.org/robot#cabinet4_door_top"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cabinet4_door_top">
+    <robot:hasPart rdf:resource="http://example.org/robot#cabinet4_door_bottom"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cabinet4_door_bottom">
+    <robot:hasPart rdf:resource="http://example.org/robot#handle_cab4_door_bottom"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cabinet5">
+    <robot:hasPart rdf:resource="http://example.org/robot#cabinet5_drawer_top"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cabinet5">
+    <robot:hasPart rdf:resource="http://example.org/robot#cabinet5_drawer_middle"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cabinet5">
+    <robot:hasPart rdf:resource="http://example.org/robot#cabinet5_drawer_bottom"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cabinet5">
+    <robot:hasPart rdf:resource="http://example.org/robot#countertop"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cabinet5_drawer_top">
+    <robot:hasPart rdf:resource="http://example.org/robot#handle_cab5_t"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cabinet5_drawer_middle">
+    <robot:hasPart rdf:resource="http://example.org/robot#handle_cab5_m"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cabinet5_drawer_bottom">
+    <robot:hasPart rdf:resource="http://example.org/robot#handle_cab5_b"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cabinet6">
+    <robot:hasPart rdf:resource="http://example.org/robot#cabinet6_drawer_top"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cabinet6">
+    <robot:hasPart rdf:resource="http://example.org/robot#cabinet6_drawer_middle"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cabinet6">
+    <robot:hasPart rdf:resource="http://example.org/robot#cabinet6_drawer_bottom"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cabinet6_drawer_top">
+    <robot:hasPart rdf:resource="http://example.org/robot#handle_cab6_t"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cabinet6_drawer_middle">
+    <robot:hasPart rdf:resource="http://example.org/robot#handle_cab6_m"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cabinet6_drawer_bottom">
+    <robot:hasPart rdf:resource="http://example.org/robot#handle_cab6_b"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cabinet12">
+    <robot:hasPart rdf:resource="http://example.org/robot#cabinet12_door_top_out_fancy"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cabinet12">
+    <robot:hasPart rdf:resource="http://example.org/robot#cabinet12_door_bottom_out_fancy"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cabinet12_door_top_out_fancy">
+    <robot:hasPart rdf:resource="http://example.org/robot#cabinet12_door_top_left"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cabinet12_door_bottom_out_fancy">
+    <robot:hasPart rdf:resource="http://example.org/robot#cabinet12_door_bottom_left"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#side_B">
+    <robot:hasPart rdf:resource="http://example.org/robot#cabinet7"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#side_B">
+    <robot:hasPart rdf:resource="http://example.org/robot#cabinet8"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#side_B">
+    <robot:hasPart rdf:resource="http://example.org/robot#cabinet9"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#side_B">
+    <robot:hasPart rdf:resource="http://example.org/robot#cabinet10"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#side_B">
+    <robot:hasPart rdf:resource="http://example.org/robot#cabinet11"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#side_B">
+    <robot:hasPart rdf:resource="http://example.org/robot#island_countertop"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#side_B">
+    <robot:hasPart rdf:resource="http://example.org/robot#useless_underbar_b"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#side_B">
+    <robot:hasPart rdf:resource="http://example.org/robot#island_waterfall_left"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#side_B">
+    <robot:hasPart rdf:resource="http://example.org/robot#island_waterfall_right"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#side_B">
+    <robot:hasPart rdf:resource="http://example.org/robot#island_back"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cabinet7">
+    <robot:hasPart rdf:resource="http://example.org/robot#cabinet7_door_bottom_left"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cabinet7">
+    <robot:hasPart rdf:resource="http://example.org/robot#dishwasher_drawer_middle"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cabinet7_door_bottom_left">
+    <robot:hasPart rdf:resource="http://example.org/robot#handle_cab7"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#dishwasher_drawer_middle">
+    <robot:hasPart rdf:resource="http://example.org/robot#handle_cab7_middle"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cabinet8">
+    <robot:hasPart rdf:resource="http://example.org/robot#cabinet8_drawer_middle"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cabinet8">
+    <robot:hasPart rdf:resource="http://example.org/robot#cabinet8_drawer_bottom"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cabinet8_drawer_bottom">
+    <robot:hasPart rdf:resource="http://example.org/robot#handle_cab8"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cabinet9">
+    <robot:hasPart rdf:resource="http://example.org/robot#cabinet9_drawer_top"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cabinet9">
+    <robot:hasPart rdf:resource="http://example.org/robot#cabinet9_drawer_middle"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cabinet9">
+    <robot:hasPart rdf:resource="http://example.org/robot#cabinet9_drawer_bottom"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cabinet9_drawer_top">
+    <robot:hasPart rdf:resource="http://example.org/robot#handle_cab9_t"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cabinet9_drawer_middle">
+    <robot:hasPart rdf:resource="http://example.org/robot#handle_cab9_m"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cabinet9_drawer_bottom">
+    <robot:hasPart rdf:resource="http://example.org/robot#handle_cab9_b"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cabinet10">
+    <robot:hasPart rdf:resource="http://example.org/robot#cabinet10_drawer_top"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cabinet10">
+    <robot:hasPart rdf:resource="http://example.org/robot#cabinet10_drawer_middle"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cabinet10">
+    <robot:hasPart rdf:resource="http://example.org/robot#cabinet10_drawer_bottom"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cabinet10_drawer_top">
+    <robot:hasPart rdf:resource="http://example.org/robot#handle_cab10_t"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cabinet10_drawer_middle">
+    <robot:hasPart rdf:resource="http://example.org/robot#handle_cab10_m"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cabinet10_drawer_bottom">
+    <robot:hasPart rdf:resource="http://example.org/robot#handle_cab10_b"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cabinet11">
+    <robot:hasPart rdf:resource="http://example.org/robot#cabinet11_drawer_top"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cabinet11">
+    <robot:hasPart rdf:resource="http://example.org/robot#cabinet11_drawer_middle"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cabinet11">
+    <robot:hasPart rdf:resource="http://example.org/robot#cabinet11_drawer_bottom"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cabinet11_drawer_top">
+    <robot:hasPart rdf:resource="http://example.org/robot#handle_cab11_t"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cabinet11_drawer_middle">
+    <robot:hasPart rdf:resource="http://example.org/robot#handle_cab11_m"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cabinet11_drawer_bottom">
+    <robot:hasPart rdf:resource="http://example.org/robot#handle_cab11_b"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#island_countertop">
+    <robot:hasPart rdf:resource="http://example.org/robot#cooktop"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#island_countertop">
+    <robot:hasPart rdf:resource="http://example.org/robot#sink"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cooktop">
+    <robot:hasPart rdf:resource="http://example.org/robot#hotplate1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cooktop">
+    <robot:hasPart rdf:resource="http://example.org/robot#hotplate2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cooktop">
+    <robot:hasPart rdf:resource="http://example.org/robot#hotplate3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#cooktop">
+    <robot:hasPart rdf:resource="http://example.org/robot#hotplate4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#sink">
+    <robot:hasPart rdf:resource="http://example.org/robot#tap_body"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#tap_body">
+    <robot:hasPart rdf:resource="http://example.org/robot#tap_handle_open"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#tap_handle_open">
+    <robot:hasPart rdf:resource="http://example.org/robot#tap_handle"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/robot#countertop">
+    <robot:hasPart rdf:resource="http://example.org/robot#coffe_machine"/>
+  </rdf:Description>
+</rdf:RDF>
